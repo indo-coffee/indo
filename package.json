@@ -1,0 +1,28 @@
+{
+  "name": "indo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "truffle": "./node_modules/.bin/truffle",
+    "develop": "yarn truffle develop",
+    "test": "yarn truffle test",
+    "compile": "yarn truffle compile",
+    "migrate": "yarn truffle migrate",
+    "migrate:ethereum:rinkeby": "yarn migrate --network ethereum_rinkeby",
+    "migrate:ethereum:mainnet": "yarn migrate --network ethereum_mainnet",
+    "verify": "yarn truffle run verify Indo",
+    "verify:ethereum:rinkeby": "yarn verify --network ethereum_rinkeby",
+    "verify:ethereum:mainnet": "yarn verify --network ethereum_mainnet"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
+    "@truffle/hdwallet-provider": "^2.0.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bn": "^0.3.0",
+    "dotenv": "^14.2.0",
+    "truffle": "^5.4.30",
+    "truffle-plugin-verify": "^0.5.21"
+  }
+}
